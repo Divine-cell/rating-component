@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    width: 100%;
+}
+
+.container {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: none;
+    background-color: hsl(213, 19%, 18%);
+    padding: 40px;
+    border-radius: 25px ;
+}
+.main {
+    text-align: center;
+}
+
+h1 {
+    color: hsl(217, 14%, 82%);
+}
+
+#selection-alart {
+    color: rgb(255, 115, 0);
+    border: none;
+    padding: 5px;
+    background-color: rgb(56, 55, 53);
+    border-radius: 30px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+   border: none;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(56, 55, 53);
+
+}
+
+.text {
+    width: 90%;
+    min-width: 360px;
+    line-height: 25px;
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+}
+
+#ratings {
+    display: flex;
+   
+}
+
+button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(216, 12%, 54%);
+    background-color: rgb(56, 55, 53);
+    cursor: pointer;
+    margin: 10px;
+}
+
+#rate1:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    scale: 1.2;
+   
+}
+
+#rate2:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    scale: 1.2;
+   
+}
+#rate3:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    scale: 1.2;
+   
+}
+#rate4:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    scale: 1.2;
+   
+}
+#rate5:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    scale: 1.2;
+   
+}
+
+input {
+    margin-top:  20px;
+    text-align: center;
+    width: 350px;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(255, 115, 0);
+    cursor: pointer;
+    color: white;
+    font-size: 23;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+ 
+}
+
+#submit-btn:hover {
+    background-color: white;
+    color: rgb(255, 115, 0);
+}
+
+a:hover {
+    color: rgb(255, 115, 0);
+}
+
+@media screen and (max-width: 585px) {
+   
+   body {
+   width: 90%;
+   min-width: 100%;
+   
+
+   }
+
+   .container {
+    width: 60%;
+    min-width: 60%;
+   
+   }  
+  
+   button {
+    width: 50px;
+   min-width: 20%;
+   border-radius: 50%;
+   height: 45px;
+   margin: 5px;
+   
+   }
+
+   #ratings {
+    width: 80%;
+    min-width: 40%;
+    
+   }
+
+  
+
+
+   .text {
+    width: 70%;
+    min-width: 100%;
+   }
+
+   .selection-alart {
+    width: 50%;
+    min-width: 100%;
+   }
+
+   input  {
+    width: 50%;
+    min-width: 100%;
+   }
+
+  
+
+}
