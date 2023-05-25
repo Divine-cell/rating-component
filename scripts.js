@@ -11,31 +11,44 @@ let rate1El = document.getElementById("rate1")
 let rate2El = document.getElementById("rate2")
 let rate3El = document.getElementById("rate3")
 let rate4El = document.getElementById("rate4")
-let rate5El = document.getElementById("rate5")
+let rate5El = document.querySelector("#rate5")
 
 
 let count = 0
 
 
 rate1El.addEventListener("click", function(e) {
-    if (e. currentTarget.Id === true ) {
-        rate1El.style.backgroundColor = "rgb(56, 55, 53)"
-        rate1El.style.color = "hsl(216, 12%, 54%)"
-    } else  {
-        rate1El.style.backgroundColor = "rgb(255, 115, 0)"
-        rate1El.style.color = "white"
-    } 
+     const isClicked = rate1El.classList.contains("current_rating") // check if the current button has the .current_rating class name
+   
+     if (isClicked) {
+        rate1El.classList.remove("current_rating") // remove .current_rating classname
+       
+
+    } else {
+        rate1El.classList.add("current_rating") // remove .current_rating classname
+        rate4El.classList.remove("current_rating") // add .current_rating classname
+         rate5El.classList.remove("current_rating") // remove .current_rating classname from rate5El
+         rate3El.classList.remove("current_rating") // remove .current_rating classname
+         rate2El.classList.remove("current_rating") // remove .current_rating classname
+    }
     
 })
 
 
 rate2El.addEventListener("click", function(e) {
-    if (e.currentTarget.id === true) {
-        rate2El.style.backgroundColor = "rgb(56, 55, 53)"
-        rate2El.style.color = "hsl(216, 12%, 54%)"
+   const isClicked = rate2El.classList.contains("current_rating") // check if the current button has the .current_rating class name
+   
+     if (isClicked) {
+        rate2El.classList.remove("current_rating") // remove .current_rating classname
+       
+
     } else {
-        rate2El.style.backgroundColor = "rgb(255, 115, 0)"
-        rate2El.style.color = "white"
+         rate1El.classList.remove("current_rating") // remove .current_rating classname
+        rate2El.classList.add("current_rating") // remove .current_rating classname
+        rate4El.classList.remove("current_rating") // add .current_rating classname
+         rate5El.classList.remove("current_rating") // remove .current_rating classname from rate5El
+         rate3El.classList.remove("current_rating") // remove .current_rating classname
+
     }
 })
 
@@ -43,64 +56,74 @@ rate2El.addEventListener("click", function(e) {
 
 
 rate3El.addEventListener("click", function(e) {
-    if (e.currentTarget.id === true) {
-        rate3El.style.backgroundColor = "rgb(56, 55, 53)"
-        rate3El.style.color = "hsl(216, 12%, 54%)"
+    const isClicked = rate3El.classList.contains("current_rating") // check if the current button has the .current_rating class name
+   
+     if (isClicked) {
+        rate3El.classList.remove("current_rating") // remove .current_rating classname
+       
+
     } else {
-        rate3El.style.backgroundColor = "rgb(255, 115, 0)"
-        rate3El.style.color = "white"
+         rate1El.classList.remove("current_rating") // remove .current_rating classname
+         rate2El.classList.remove("current_rating") // remove .current_rating classname
+        rate3El.classList.add("current_rating") // remove .current_rating classname
+        rate4El.classList.remove("current_rating") // add .current_rating classname
+         rate5El.classList.remove("current_rating") // remove .current_rating classname from rate5El
     }
 })
 
 
 
 rate4El.addEventListener("click", function(e) {
-    if (e.currentTarget.id === true) {
-        rate4El.style.backgroundColor = "rgb(56, 55, 53)"
-        rate4El.style.color = "hsl(216, 12%, 54%)"
+   const isClicked = rate4El.classList.contains("current_rating") // check if the current button has the .current_rating class name
+   
+    if (isClicked) {
+        rate4El.classList.remove("current_rating") // remove .current_rating classname
+       
+
     } else {
-        rate4El.style.backgroundColor = "rgb(255, 115, 0)"
-        rate4El.style.color = "white"
+         rate1El.classList.remove("current_rating") // remove .current_rating classname
+         rate2El.classList.remove("current_rating") // remove .current_rating classname
+         rate3El.classList.remove("current_rating") // remove .current_rating classname
+        rate4El.classList.add("current_rating") // add .current_rating classname
+         rate5El.classList.remove("current_rating") // remove .current_rating classname from rate5El
     }
 })
 
 
 
 rate5El.addEventListener("click", function(e) {
-    if (e.currentTarget.id === true) {
-        rate5El.style.backgroundColor = "rgb(56, 55, 53)"
-        rate5El.style.color = "hsl(216, 12%, 54%)"
+    const isClicked = rate5El.classList.contains("current_rating") // check if the current button has the .current_rating class name
+   
+    if (isClicked) {
+        rate5El.classList.remove("current_rating") // remove .current_rating classname
     } else {
-        rate5El.style.backgroundColor = "rgb(255, 115, 0)"
-        rate5El.style.color = "white"
-        }
-    })
+         rate1El.classList.remove("current_rating") // remove .current_rating classname
+          rate2El.classList.remove("current_rating") // remove .current_rating classname
+        rate5El.classList.add("current_rating") // add .current_rating classname
+         rate4El.classList.remove("current_rating") // remove .current_rating classname
+          rate3El.classList.remove("current_rating") // remove .current_rating classname from rate3El 
+    }
+})
 
-    
-        submitBtn.addEventListener("click", function(e) {
-            if (e.currentTarget.id === true) {
-             rate1El.addEventListener("click", function(e){
-                 if (e.currentTarget.id === true) {
-                     rateCount.textContent = count++
-                 } else {
-                     rateCount.textContent =  count++
-                 }
-             })
-            }
-         })
-    
     
         
         
 
 
    
+    const submitEl = document.querySelector('#submit-el')
+    const form = document.querySelector('#rating_form')
 
-    /*submitEl.addEventListener("click", function() {
-     r
-    
-    })*/
+    submitEl.addEventListener("click", function(e) {
+        e.preventDefault() // prevent the form from being submitted and control the submission yourself
 
+    // find a button with a 
+    })
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+    })
 
 
 

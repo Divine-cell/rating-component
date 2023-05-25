@@ -16,8 +16,9 @@ body {
     border: none;
     background-color: hsl(213, 19%, 18%);
     padding: 40px;
-    border-radius: 25px ;
+    border-radius: 25px;
 }
+
 .main {
     text-align: center;
 }
@@ -36,15 +37,16 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+
 .logo {
-   border: none;
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: rgb(56, 55, 53);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 55, 53);
 
 }
 
@@ -58,7 +60,7 @@ h1 {
 
 #ratings {
     display: flex;
-   
+
 }
 
 button {
@@ -80,36 +82,39 @@ button {
     background-color: hsl(216, 12%, 54%);
     color: white;
     scale: 1.2;
-   
+
 }
 
 #rate2:hover {
     background-color: hsl(216, 12%, 54%);
     color: white;
     scale: 1.2;
-   
+
 }
+
 #rate3:hover {
     background-color: hsl(216, 12%, 54%);
     color: white;
     scale: 1.2;
-   
+
 }
+
 #rate4:hover {
     background-color: hsl(216, 12%, 54%);
     color: white;
     scale: 1.2;
-   
+
 }
+
 #rate5:hover {
     background-color: hsl(216, 12%, 54%);
     color: white;
     scale: 1.2;
-   
+
 }
 
 input {
-    margin-top:  20px;
+    margin-top: 20px;
     text-align: center;
     width: 350px;
     padding: 12px;
@@ -121,8 +126,8 @@ input {
     font-size: 23;
     font-weight: 400;
     text-transform: uppercase;
-    
- 
+
+
 }
 
 #submit-btn:hover {
@@ -135,53 +140,58 @@ a:hover {
 }
 
 @media screen and (max-width: 585px) {
-   
-   body {
-   width: 90%;
-   min-width: 100%;
-   
 
-   }
-
-   .container {
-    width: 60%;
-    min-width: 60%;
-   
-   }  
-  
-   button {
-    width: 50px;
-   min-width: 20%;
-   border-radius: 50%;
-   height: 45px;
-   margin: 5px;
-   
-   }
-
-   #ratings {
-    width: 80%;
-    min-width: 40%;
-    
-   }
-
-  
+    body {
+        width: 90%;
+        min-width: 100%;
 
 
-   .text {
-    width: 70%;
-    min-width: 100%;
-   }
+    }
 
-   .selection-alart {
-    width: 50%;
-    min-width: 100%;
-   }
+    .container {
+        width: 60%;
+        min-width: 60%;
 
-   input  {
-    width: 50%;
-    min-width: 100%;
-   }
+    }
 
-  
+    button {
+        width: 50px;
+        min-width: 20%;
+        border-radius: 50%;
+        height: 45px;
+        margin: 5px;
 
+    }
+
+    #ratings {
+        width: 80%;
+        min-width: 40%;
+
+    }
+
+
+
+
+    .text {
+        width: 70%;
+        min-width: 100%;
+    }
+
+    .selection-alart {
+        width: 50%;
+        min-width: 100%;
+    }
+
+    input {
+        width: 50%;
+        min-width: 100%;
+    }
+
+
+
+}
+
+.current_rating {
+    background-color: rgb(255, 115, 0)!important;
+    color: #ffff;
 }
